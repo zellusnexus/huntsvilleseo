@@ -49,7 +49,7 @@
       var action = form.getAttribute('action');
       if (!action || action === '#') {
         e.preventDefault();
-        status.textContent = 'Thanks! We’ll be in touch shortly. Prefer to talk now? Call 256-497-3666.';
+        status.textContent = 'Thanks! We’ll be in touch shortly. Prefer to talk now? Call 256-800-2559.';
         status.classList.add('success');
         form.reset();
       }
