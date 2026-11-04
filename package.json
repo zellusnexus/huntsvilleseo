@@ -1,0 +1,14 @@
+{
+  "name": "huntsvilleseo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Huntsville SEO Agency static website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo \"Static site - no build step required\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
