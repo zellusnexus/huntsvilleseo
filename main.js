@@ -18,41 +18,4 @@
       }
     });
   }
-
-  // Proposal form validation.
-  // NOTE: set the form's `action` attribute to your form handler (e.g. a CRM
-  // webhook or Formspree endpoint). Until then, submissions are only validated
-  // client-side and are not sent anywhere.
-  var form = document.querySelector('.proposal-form');
-  if (form) {
-    var status = form.querySelector('.form-status');
-    form.addEventListener('submit', function (e) {
-      var email = form.elements.email;
-      var consent = form.elements.consent;
-      status.className = 'form-status';
-
-      if (!email.value || !email.checkValidity()) {
-        e.preventDefault();
-        status.textContent = 'Please enter a valid email address.';
-        status.classList.add('error');
-        email.focus();
-        return;
-      }
-      if (!consent.checked) {
-        e.preventDefault();
-        status.textContent = 'Please agree to the terms to continue.';
-        status.classList.add('error');
-        consent.focus();
-        return;
-      }
-
-      var action = form.getAttribute('action');
-      if (!action || action === '#') {
-        e.preventDefault();
-        status.textContent = 'Thanks! We’ll be in touch shortly. Prefer to talk now? Call 256-800-2559.';
-        status.classList.add('success');
-        form.reset();
-      }
-    });
-  }
 })();

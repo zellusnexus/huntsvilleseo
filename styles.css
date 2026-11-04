@@ -68,7 +68,8 @@ p { margin: 0 0 1.1em; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 70px; }
 .logo { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--navy); font-size: 19px; font-weight: 600; margin: 0; }
 .logo strong { color: var(--orange); font-weight: 800; }
-.logo-mark { font-size: 22px; }
+.logo-img { display: block; height: 64px; width: auto; }
+.logo-img-footer { height: 96px; border-radius: 12px; }
 .site-nav { display: flex; align-items: center; gap: 26px; }
 .site-nav a:not(.btn) { color: var(--ink); text-decoration: none; font-weight: 500; font-size: 15px; }
 .site-nav a:not(.btn):hover { color: var(--orange-dark); }
@@ -94,22 +95,6 @@ p { margin: 0 0 1.1em; }
 .form-card { background: var(--white); color: var(--ink); border-radius: var(--radius); padding: 32px; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
 .form-kicker { margin: 0 0 4px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
 .form-card h2 { font-size: 26px; }
-.proposal-form label { display: block; margin-bottom: 14px; }
-.proposal-form label > span { display: block; font-size: 14px; font-weight: 600; margin-bottom: 5px; }
-.proposal-form abbr { color: var(--orange-dark); text-decoration: none; }
-.proposal-form input[type="text"],
-.proposal-form input[type="tel"],
-.proposal-form input[type="email"] {
-  width: 100%; padding: 12px 14px; font: inherit; font-size: 16px;
-  border: 1px solid var(--line); border-radius: 10px; background: var(--bg-alt);
-}
-.proposal-form input:focus { outline: 2px solid var(--orange); outline-offset: 1px; background: var(--white); }
-.proposal-form .consent { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--muted); line-height: 1.5; }
-.proposal-form .consent span { font-weight: 400; font-size: 13px; margin: 0; }
-.proposal-form .consent input { margin-top: 3px; accent-color: var(--orange); }
-.form-status { margin: 12px 0 0; font-size: 14px; min-height: 1.2em; }
-.form-status.error { color: #c0392b; }
-.form-status.success { color: #1e8e4e; }
 
 /* Sections */
 .section { padding: 84px 0; }
