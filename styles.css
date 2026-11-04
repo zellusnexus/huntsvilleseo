@@ -190,3 +190,33 @@ p { margin: 0 0 1.1em; }
   .site-nav a:not(.btn) { padding: 12px 0; border-bottom: 1px solid var(--line); }
   .site-nav .btn { margin-top: 14px; text-align: center; }
 }
+
+/* Breadcrumb */
+.breadcrumb { font-size: 14px; margin-bottom: 18px; color: #a9b6cc; }
+.breadcrumb a { color: #dbe4f3; text-decoration: none; }
+.breadcrumb a:hover { color: var(--white); text-decoration: underline; }
+.site-nav a[aria-current="page"] { color: var(--orange-dark); }
+
+/* Card extras */
+.card-link { display: inline-block; margin-top: 16px; font-weight: 700; text-decoration: none; }
+.card-link:hover { text-decoration: underline; }
+.step { text-transform: uppercase; letter-spacing: .1em; font-size: 12px; font-weight: 700; color: var(--orange-dark) !important; margin: 0 0 6px !important; }
+.card-highlight { border: 2px solid var(--orange); }
+.compare { margin-top: 36px; }
+.compare-cta { margin-top: 40px; }
+
+/* FAQ */
+.faq { margin-top: 36px; display: grid; gap: 14px; }
+.faq details { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.faq summary {
+  cursor: pointer; list-style: none; padding: 20px 56px 20px 24px; position: relative;
+  font-weight: 700; color: var(--navy); font-size: 18px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+"; position: absolute; right: 24px; top: 50%; transform: translateY(-50%);
+  font-size: 24px; font-weight: 600; color: var(--orange);
+}
+.faq details[open] summary::after { content: "−"; }
+.faq summary:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; border-radius: var(--radius); }
+.faq details p { padding: 0 24px 20px; margin: 0; color: var(--muted); }
